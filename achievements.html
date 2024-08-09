@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="The website is about Red Star Football Club"
+    />
+    <title>Red Star FC</title>
+    <link rel="icon" href="images/logo.webp" type="image/icon type">
+    <link href="./style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+      defer
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      defer
+    />
+  </head>
+  <body>
+    <header>
+      <div class="ach-header">
+        <nav>
+          <a href="index.html" class="logo"
+            ><img src="images/logo.webp" alt="logo here" loading="lazy"/>&nbsp;RED STAR FC</a
+          >
+          <div class="nav-links" id="navLinks">
+            <i class="fa fa-close" onclick="hideMenu()"></i>
+            <ul>
+              <li><a href="index.html" aria-label="">HOME</a></li>
+              <li><a href="about.html" aria-label="">ABOUT</a></li>
+              <li>
+                <a href="achievements.html" aria-label="">ACHIEVEMENTS</a>
+              </li>
+              <li><a href="gallery.html" aria-label="">GALLERY</a></li>
+              <li><a href="team.html" aria-label="">TEAM</a></li>
+              <li><a href="contact.html" aria-label="">CONTACT</a></li>
+            </ul>
+          </div>
+          <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Achievements</h1>
+      </div>
+    </header>
+    <main>
+      <section class="achievements">
+        <div class="row">
+          <div class="ach-item">
+            <div class="ach-col">
+              <img src="images/ach-1.webp" loading="lazy" alt="" />
+            </div>
+            <div class="ach-text">
+              <h2>All Kerala u-15 Champions 2024</h2>
+              <p>
+                In 2024, Red Star FC proudly clinched the title of All Kerala
+                U-15 Champions, marking a significant milestone in the club's
+                illustrious history. This victory is a testament to the
+                dedication, hard work, and exceptional talent of our young
+                athletes. Throughout the tournament, our U-15 team showcased
+                remarkable skill, strategic prowess, and unwavering team spirit,
+                overcoming formidable opponents to emerge as champions. This
+                achievement underscores Red Star FC's commitment to nurturing
+                young talent and fostering a culture of excellence and
+                sportsmanship. We are immensely proud of our players and
+                coaching staff for their relentless pursuit of victory and their
+                embodiment of the club's values on and off the field. As we
+                celebrate this prestigious win, we look forward to continuing
+                our legacy of success and inspiring future generations of
+                footballers.
+              </p>
+            </div>
+          </div>
+          <div class="ach-item">
+            <div class="ach-col">
+              <img src="images/ach2.webp" loading="lazy" alt="" />
+            </div>
+            <div class="ach-text">
+              <h2>Adnan selected for the Indian National Team</h2>
+              <p>
+                We are thrilled to announce that Adnan, one of Red Star FC's
+                most promising young talents, has been selected for the Indian
+                National Team. This prestigious selection is a significant
+                achievement for both Adnan and our club, reflecting the hard
+                work, dedication, and exceptional skill he has demonstrated on
+                the field. Adnan's journey with Red Star FC has been nothing
+                short of inspiring, and his selection to represent India at the
+                national level is a testament to his relentless pursuit of
+                excellence. We are incredibly proud of Adnan and confident that
+                he will make a substantial impact on the national stage,
+                bringing honor and recognition to our club and inspiring fellow
+                teammates. As he embarks on this exciting new chapter, we wish
+                him all the success and support from the entire Red Star FC
+                community.
+              </p>
+            </div>
+          </div>
+          <div class="ach-item">
+            <div class="ach-col">
+              <img src="images/ach3.webp" loading="lazy" alt="" />
+            </div>
+            <div class="ach-text">
+              <h2>U-20 Team has been promoted to Division 1 in K-League</h2>
+              <p>
+                We are delighted to announce that our U-20 team has been
+                promoted to Division 1 in the Kerala League. This remarkable
+                achievement is the result of unwavering dedication, hard work,
+                and the exceptional talent of our young athletes. Throughout the
+                season, our U-20 team has showcased outstanding performance,
+                resilience, and teamwork, earning their well-deserved spot in
+                the top division. This promotion marks a significant milestone
+                for Red Star FC, reflecting our commitment to nurturing young
+                talent and striving for excellence at every level. We are
+                incredibly proud of our U-20 players and coaching staff for
+                their relentless efforts and determination. As we prepare for
+                the challenges and opportunities ahead in Division 1, we look
+                forward to continued success and growth. Congratulations to the
+                U-20 team for this fantastic accomplishment!
+              </p>
+            </div>
+          </div>
+          
+        </div>
+        
+      </section>
+      <div class="more">Many more to come&nbsp;<i class="fa fa-smile-o" aria-hidden="true"></i> </div>
+    </main>
+    <footer>
+      <div class="footer"></div>
+    </footer>
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+    <script src="footer.js" defer></script>
+  </body>
+</html>
