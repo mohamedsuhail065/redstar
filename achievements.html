@@ -26,25 +26,7 @@
   <body>
     <header>
       <div class="ach-header">
-        <nav>
-          <a href="index.html" class="logo"
-            ><img src="images/logo.webp" alt="logo here" loading="lazy"/>&nbsp;RED STAR FC</a
-          >
-          <div class="nav-links" id="navLinks">
-            <i class="fa fa-close" onclick="hideMenu()"></i>
-            <ul>
-              <li><a href="index.html" aria-label="">HOME</a></li>
-              <li><a href="about.html" aria-label="">ABOUT</a></li>
-              <li>
-                <a href="achievements.html" aria-label="">ACHIEVEMENTS</a>
-              </li>
-              <li><a href="gallery.html" aria-label="">GALLERY</a></li>
-              <li><a href="team.html" aria-label="">TEAM</a></li>
-              <li><a href="contact.html" aria-label="">CONTACT</a></li>
-            </ul>
-          </div>
-          <i class="fa fa-bars" onclick="showMenu()"></i>
-        </nav>
+        <div class="navbar"></div>
         <h1>Achievements</h1>
       </div>
     </header>
@@ -133,6 +115,7 @@
     <footer>
       <div class="footer"></div>
     </footer>
+    <script src="navbar.js" defer></script>
     <script>
       var navLinks = document.getElementById("navLinks");
 
