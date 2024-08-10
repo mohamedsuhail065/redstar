@@ -8,12 +8,12 @@
       content="The website is about Red Star Football Club"
     />
     <title>Red Star FC</title>
-    <link rel="icon" href="images/logo.webp" type="image/icon type">
+    <link rel="icon" href="images/logo.webp" type="image/icon type" />
     <link href="./style.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700;&display=swap"
       rel="stylesheet"
       defer
     />
@@ -26,7 +26,37 @@
   <body>
     <header>
       <div class="ach-header">
-        <div class="navbar"></div>
+        <nav>
+          <a href="index.html" class="logo"
+            ><img
+              src="images/logo.webp"
+              alt="logo here"
+              loading="lazy"
+            />&nbsp;RED STAR FC</a
+          >
+          <div class="nav-links" id="navLinks">
+            <i class="fa fa-close" onclick="hideMenu()"></i>
+            <ul>
+              <li><a href="index.html" aria-label="index page URL">HOME</a></li>
+              <li>
+                <a href="about.html" aria-label="about page URL">ABOUT</a>
+              </li>
+              <li>
+                <a href="achievements.html" aria-label="achievement page URL"
+                  >ACHIEVEMENTS</a
+                >
+              </li>
+              <li>
+                <a href="gallery.html" aria-label="Gallery page URL">GALLERY</a>
+              </li>
+              <li><a href="team.html" aria-label="Team page URL">TEAM</a></li>
+              <li>
+                <a href="contact.html" aria-label="Contact page URL">CONTACT</a>
+              </li>
+            </ul>
+          </div>
+          <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
         <h1>Achievements</h1>
       </div>
     </header>
@@ -106,11 +136,11 @@
               </p>
             </div>
           </div>
-          
         </div>
-        
       </section>
-      <div class="more">Many more to come&nbsp;<i class="fa fa-smile-o" aria-hidden="true"></i> </div>
+      <div class="more">
+        Many more to come&nbsp;<i class="fa fa-smile-o" aria-hidden="true"></i>
+      </div>
     </main>
     <footer>
       <div class="footer"></div>
