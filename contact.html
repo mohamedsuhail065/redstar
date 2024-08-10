@@ -122,19 +122,20 @@
     <footer>
       <div class="footer"></div>
     </footer>
-    <script src="footer.js" defer></script>
-    <script
+    <script async src="footer.js" defer></script>
+    <!-- --------email js script----- -->
+    <script async
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
     ></script>
-    <script type="text/javascript" defer>
+    <script async type="text/javascript">
       (function () {
         emailjs.init({
           publicKey: "Eyh78S48vl80B9NzL",
         });
       })();
     </script>
-    <script src="script.js" defer></script>
+    <script async src="script.js" ></script>
     <script>
       var navLinks = document.getElementById("navLinks");
 
