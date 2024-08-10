@@ -429,6 +429,9 @@ p {
     color: #555;
     font-weight: 400;
   }
+  .location {
+   width: 50%;
+  }
 }
 
 /* --------achievement header---------- */
