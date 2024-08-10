@@ -435,7 +435,7 @@ p {
   height: 70vh;
   width: 100%;
   background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
-    url(images/ach.webp);
+    url(images/ach_m.webp);
   background-position: center;
   background-size: cover;
   text-align: center;
@@ -527,7 +527,7 @@ p {
   height: 70vh;
   width: 100%;
   background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
-    url(images/image.webp);
+    url(images/gallery.webp);
   background-position: center;
   background-size: cover;
   text-align: center;
@@ -585,6 +585,8 @@ p {
 
 @media (max-width: 700px) {
   .gallery-header {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(images/gallaery_m.webp);
     height: 60vh;
   }
   .gallery {
@@ -604,7 +606,7 @@ p {
   height: 70vh;
   width: 100%;
   background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
-    url(images/about.webp);
+    url(images/team.webp);
   background-position: center;
   background-size: cover;
   text-align: center;
@@ -702,6 +704,8 @@ p {
 @media (max-width: 768px) {
   .team-header {
     height: 60vh;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(images/team_m.webp);
   }
   .coach {
     padding: 40px 20px;
