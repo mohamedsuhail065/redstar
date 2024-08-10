@@ -9,7 +9,12 @@
     />
     <title>Red Star FC</title>
     <link href="./style.css" rel="stylesheet" />
-    <link rel="icon" href="images/logo.webp" type="image/icon type">
+    <link
+      rel="icon"
+      href="images/logo.webp"
+      type="image/icon type"
+      aria-label="logo"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -28,19 +33,31 @@
       <div class="team-header">
         <nav>
           <a href="index.html" class="logo"
-            ><img src="images/logo.webp" alt="logo here" loading="lazy"/>&nbsp;RED STAR FC</a
+            ><img
+              src="images/logo.webp"
+              alt="logo here"
+              loading="lazy"
+            />&nbsp;RED STAR FC</a
           >
           <div class="nav-links" id="navLinks">
             <i class="fa fa-close" onclick="hideMenu()"></i>
             <ul>
-              <li><a href="index.html" aria-label="">HOME</a></li>
-              <li><a href="about.html" aria-label="">ABOUT</a></li>
+              <li><a href="index.html" aria-label="index page URL">Home</a></li>
               <li>
-                <a href="achievements.html" aria-label="">ACHIEVEMENTS</a>
+                <a href="about.html" aria-label="about page URL">About</a>
               </li>
-              <li><a href="gallery.html" aria-label="">GALLERY</a></li>
-              <li><a href="team.html" aria-label="">TEAM</a></li>
-              <li><a href="contact.html" aria-label="">CONTACT</a></li>
+              <li>
+                <a href="achievements.html" aria-label="achievement page URL"
+                  >Achievements</a
+                >
+              </li>
+              <li>
+                <a href="gallery.html" aria-label="Gallery page URL">Gallery</a>
+              </li>
+              <li><a href="team.html" aria-label="Team page URL">Team</a></li>
+              <li>
+                <a href="contact.html" aria-label="Contact page URL">Contact</a>
+              </li>
             </ul>
           </div>
           <i class="fa fa-bars" onclick="showMenu()"></i>
@@ -53,14 +70,14 @@
         <h2>Our Coaches</h2>
         <div class="row-g">
           <div class="coach-col">
-            <img src="images/coach.webp" alt="Head Coach" loading="lazy"/>
+            <img src="images/coach.webp" alt="Head Coach" loading="lazy" />
             <div class="coach-info">
               <h3>Head Coach</h3>
               <p>Arrigo Stimac</p>
             </div>
           </div>
           <div class="coach-col">
-            <img src="images/asst.webp" alt="Assistant Coach" loading="lazy"/>
+            <img src="images/asst.webp" alt="Assistant Coach" loading="lazy" />
             <div class="coach-info">
               <h3>Assistant Coach</h3>
               <p>Bineesh Palakkal</p>
@@ -71,55 +88,56 @@
       <section class="players">
         <h2>Players</h2>
         <div class="row-g">
-            <div class="main">
-                <div class="position-group">
-                    <h3>Forwards</h3>
-                    <ul>
-                        <li>Adnan</li>
-                        <li>Sinan</li>
-                        <li>Shahid</li>
-                        <li>Sanjay</li>
-                        <li>Pranav</li>
-                        <li>Kishore</li>
-                    </ul>
-                </div>
-                <div class="position-group">
-                    <h3>midfielders</h3>
-                    <ul>
-                        <li>Shanil</li>
-                        <li>Suhail</li>
-                        <li>Shameem</li>
-                        <li>Ajith</li>
-                        <li>Yadhu</li>
-                        <li>Sachin</li>
-                    </ul>
-                </div>
-                <div class="position-group">
-                    <h3>defenders</h3>
-                    <ul>
-                        <li>Kiran</li>
-                        <li>Rashid</li>
-                        <li>Vysakh</li>
-                        <li>Ajay</li>
-                        <li>Rauf</li>
-                        <li>Viji</li>
-                    </ul>
-                </div>
-                <div class="position-group">
-                    <h3>Goal Keepers</h3>
-                    <ul>
-                        <li>Shibil</li>
-                        <li>Murshid</li>
-                        <li>Shanu</li>
-                    </ul>
-                </div>
+          <div class="main">
+            <div class="position-group">
+              <h3>Forwards</h3>
+              <ul>
+                <li>Adnan</li>
+                <li>Sinan</li>
+                <li>Shahid</li>
+                <li>Sanjay</li>
+                <li>Pranav</li>
+                <li>Kishore</li>
+              </ul>
             </div>
+            <div class="position-group">
+              <h3>midfielders</h3>
+              <ul>
+                <li>Shanil</li>
+                <li>Suhail</li>
+                <li>Shameem</li>
+                <li>Ajith</li>
+                <li>Yadhu</li>
+                <li>Sachin</li>
+              </ul>
+            </div>
+            <div class="position-group">
+              <h3>defenders</h3>
+              <ul>
+                <li>Kiran</li>
+                <li>Rashid</li>
+                <li>Vysakh</li>
+                <li>Ajay</li>
+                <li>Rauf</li>
+                <li>Viji</li>
+              </ul>
+            </div>
+            <div class="position-group">
+              <h3>Goal Keepers</h3>
+              <ul>
+                <li>Shibil</li>
+                <li>Murshid</li>
+                <li>Shanu</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
     </main>
     <footer>
       <div class="footer"></div>
     </footer>
+    <!-- code for the responsive option menu -->
     <script>
       var navLinks = document.getElementById("navLinks");
 

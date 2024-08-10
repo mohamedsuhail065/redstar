@@ -8,7 +8,12 @@
       content="The website is about Red Star Football Club"
     />
     <title>Red Star FC</title>
-    <link rel="icon" href="images/logo.webp" type="image/icon type">
+    <link
+      rel="icon"
+      href="images/logo.webp"
+      type="image/icon type"
+      aria-label="logo"
+    />
     <link href="./style.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -28,19 +33,31 @@
       <div class="sub-header">
         <nav>
           <a href="index.html" class="logo"
-            ><img src="images/logo.webp" alt="logo here" loading="lazy"/>&nbsp;RED STAR FC</a
+            ><img
+              src="images/logo.webp"
+              alt="logo here"
+              loading="lazy"
+            />&nbsp;RED STAR FC</a
           >
           <div class="nav-links" id="navLinks">
             <i class="fa fa-close" onclick="hideMenu()"></i>
             <ul>
               <li><a href="index.html" aria-label="index page URL">HOME</a></li>
-              <li><a href="about.html" aria-label="about page URL">ABOUT</a></li>
               <li>
-                <a href="achievements.html" aria-label="achievement page URL">ACHIEVEMENTS</a>
+                <a href="about.html" aria-label="about page URL">ABOUT</a>
               </li>
-              <li><a href="gallery.html" aria-label="Gallery page URL">GALLERY</a></li>
+              <li>
+                <a href="achievements.html" aria-label="achievement page URL"
+                  >ACHIEVEMENTS</a
+                >
+              </li>
+              <li>
+                <a href="gallery.html" aria-label="Gallery page URL">GALLERY</a>
+              </li>
               <li><a href="team.html" aria-label="Team page URL">TEAM</a></li>
-              <li><a href="contact.html" aria-label="Contact page URL">CONTACT</a></li>
+              <li>
+                <a href="contact.html" aria-label="Contact page URL">CONTACT</a>
+              </li>
             </ul>
           </div>
           <i class="fa fa-bars" onclick="showMenu()"></i>
@@ -92,7 +109,7 @@
               Kerala and recruited cadets even from distant states like
               Chhattisgarh and Uttar Pradesh. The first chief coach of the
               residential academy was renowned international Jo Paul Ancheri.
-          <br/><br/>
+              <br /><br />
               Red Star Academy made its presence felt through hard work and by
               winning some under 17 tournaments. After the initial months Mr.
               Bino George took over as the chief coach. He was a Level A coach
@@ -106,7 +123,7 @@
               went on to represent India under-17 in the SAFF cup where they
               finished as Runners-up. This indeed was a proud achievement for
               Red Star academy.
-          <br/><br/>
+              <br /><br />
               Currently, we have a player named Rishi Dutt in the ongoing Indian
               camp. We have fared creditably in the recently held age group
               tournaments conducted by Kerala Football Association. We have
@@ -119,21 +136,24 @@
               100 covering various age groups. We have also decided to hire the
               services of eminent coaches from India and abroad. We also intend
               to associate with foreign clubs to ensure the best training for
-              our cadets. 
+              our cadets.
             </p>
           </div>
         </div>
-        <h3>Our goal is to produce world-class footballers who
-          would go on to represent the nation. We aim to put India on the
-          football map with a continuous supply of quality players. It is
-          also our objective to make sure our recruits come out as better
-          individuals imbibing the virtues of the sport.</h3>
+        <h3>
+          Our goal is to produce world-class footballers who would go on to
+          represent the nation. We aim to put India on the football map with a
+          continuous supply of quality players. It is also our objective to make
+          sure our recruits come out as better individuals imbibing the virtues
+          of the sport.
+        </h3>
       </section>
     </main>
     <footer>
       <div class="footer"></div>
     </footer>
     <script src="footer.js" defer></script>
+    <!-- code for the responsive option menu -->
     <script>
       var navLinks = document.getElementById("navLinks");
 

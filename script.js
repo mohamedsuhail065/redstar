@@ -2,44 +2,78 @@ function sendMail(event) {
   event.preventDefault();
   var name = document.getElementById("name").value;
   var email = document.getElementById("email").value;
+  var subject = document.getElementById("subject").value;
+  var message = document.getElementById("message").value;
 
   let params = {
-    name: document.getElementById("name").value,
-    email: document.getElementById("email").value,
-    subject: document.getElementById("subject").value,
-    message: document.getElementById("message").value,
+    name: name,
+    email: email,
+    subject: subject,
+    message: message,
   };
 
-  if (validateName(name) && validateEmail(email)) {
+  clearErrors();
+
+  let valid = true;
+
+  if (!validateName(name)) {
+    showError("nameError", "Please enter a valid name.");
+    valid = false;
+  }
+
+  if (!validateEmail(email)) {
+    showError("emailError", "Please enter a valid email address.");
+    valid = false;
+  }
+
+  if(subject==""){
+    showError("subjectError", "Please enter a subject.");
+    valid = false;
+  }
+
+  if(message==""){
+    showError("messageError", "Please enter a message.");
+    valid = false;
+  }
+
+  if (valid) {
     emailjs.send("service_su4d5pj", "template_j9d7kb9", params).then(
       function (response) {
         alert("Message sent successfully!");
         location.reload();
       },
       function (error) {
-        alert("Failed to send message. Please try again.");
+        showError("formError", "Failed to send message. Please try again.");
       }
     );
-  } else {
-    if (validateName(name)) {
-      alert("Please enter a valid email address.");
-    } else {
-      alert("Please enter a valid name.");
-    }
   }
-  
 }
 
 function validateName(name) {
-  const namePattern = /^[A-Za-z\s]+$/;
-  return namePattern.test(name);
+  if (name != "") {
+    const namePattern = /^[A-Za-z\s]+$/;
+    return namePattern.test(name);
+  }
 }
 
 function validateEmail(email) {
-  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  return emailPattern.test(email);
+  if (email != "") {
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailPattern.test(email);
+  }
+}
+
+function showError(id, message) {
+  const errorElement = document.getElementById(id);
+  errorElement.textContent = message;
+  errorElement.style.display = "block";
+}
+
+function clearErrors() {
+  document.querySelectorAll(".error").forEach(function (error) {
+    error.textContent = "";
+    error.style.display = "none";
+  });
 }
 
 document.getElementById("contactForm").addEventListener("submit", sendMail);
-
-
